@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Notes App</title>
+</head>
+<body>
+    <div class="popup-container none">
+        <div class="popup">
+            <div class="top-content">
+                <p class="popup-text">Add a new</p>
+                <ion-icon name="close-outline" class="close"></ion-icon>
+            </div>
+            <form action="#">
+                <div class="title">
+                    <label>Title</label>
+                    <input type="text" required class="input-title" placeholder="Your title...">
+                </div>
+
+                <div class="description">
+                    <label>Description</label>
+                    <textarea class="input-description" required placeholder="Your description..."></textarea>
+                </div>
+
+                <button class="popup-add-btn">Add note</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="cards">
+            <li class="card add-card-btn">
+                <ion-icon name="add-circle-outline" class="add-btn"></ion-icon>
+                <p class="add-text">Add new note</p>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
